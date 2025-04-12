@@ -160,3 +160,7 @@ LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
 MIDDLEWARE.insert(1, 'students.middleware.LanguageMiddleware')
+#this one is for the deployment
+CSRF_TRUSTED_ORIGINS = [
+    'https://django-website-production.up.railway.app'
+]
