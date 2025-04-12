@@ -1,0 +1,67 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Edit Teacher" %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #dee9ff;
+            font-family: Arial, sans-serif;
+        }
+        .edit-form {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary, .btn-secondary {
+            width: 100%;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .form-icon {
+            text-align: center;
+            font-size: 40px;
+            color: #5891ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="edit-form">
+        <h4 class="text-center">{% trans "Edit Teacher" %}</h4>
+        
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-icon"><i class="icon-user"></i></div>
+
+            {% for field in form %}
+                <div class="form-group">
+                    {{ field.label_tag }} {{ field }}
+                    {% if field.errors %} <small class="text-danger">{{ field.errors.0 }}</small> {% endif %}
+                </div>
+            {% endfor %}
+
+            <button type="submit" class="btn btn-primary">{% trans "Save Changes" %}</button>
+            <a href="{% url 'teacher_list' %}" class="btn btn-secondary mt-2">{% trans "Cancel" %}</a>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

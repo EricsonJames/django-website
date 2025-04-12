@@ -1,0 +1,154 @@
+{% load i18n %}
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Subject" %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/asset/css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dee9ff;
+        }
+
+        .registration-form {
+            padding: 50px 0;
+        }
+
+        .registration-form form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .registration-form .form-icon {
+            text-align: center;
+            background-color: #5891ff;
+            border-radius: 50%;
+            font-size: 40px;
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 30px;
+            line-height: 100px;
+        }
+
+        .registration-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .registration-form .form-control {
+            border-radius: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .registration-form .create-account {
+            border-radius: 30px;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #5791ff;
+            border: none;
+            color: white;
+            width: 100%;
+        }
+
+        .registration-form .cancel-button {
+            background-color: gray;
+            width: 100%;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .registration-form form {
+                padding: 30px;
+            }
+
+            .registration-form .form-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 30px;
+                line-height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            {% load static %}
+            <img src="{% static 'tech1.png' %}" alt="Jubilee International" style="height: 60px;">
+            TechGuardians Solution
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+           
+              
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="registration-form">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2 class="text-center">{% trans "Student Registration" %}</h2>
+
+        <div class="form-icon">
+            <span><i class="icon icon-user"></i></span>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Enter Subject Name" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn create-account">{% trans "Add Subject" %}</button>
+        </div>
+
+        <div class="form-group">
+            <a href="{% url 'subject_list' %}" class="btn cancel-button">{% trans "Cancel" %}</a>
+        </div>
+    </form>    
+</div>
+
+<footer class="text-center text-white bg-dark p-3">
+    <p>&copy; 2024 TechGuardians Solution</p>
+</footer>
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

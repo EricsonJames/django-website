@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete Student</title>
+</head>
+<body>
+    <h1>Confirm Delete</h1>
+    <p>Are you sure you want to delete {{ student.first_name }} {{ student.last_name }}?</p>
+    
+    <form method="post" action="{% url 'delete_secondary_student' student.student_id %}">
+        {% csrf_token %}
+        <button type="submit" style="color: red;">Yes, Delete</button>
+    </form>
+
+    <br>
+    <a href="{% url 'secondary_students' %}">Cancel</a>
+</body>
+</html>

@@ -1,0 +1,160 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% trans "Login" %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f9fc;
+    }
+    header, footer {
+      width: 100%;
+      background-color: #267379;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+    }
+    .container {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      flex-direction: row;
+    }
+    .login-box {
+      padding: 40px;
+      background: #e9f4f9;
+      flex: 1;
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #267379;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .input-group label {
+      display: block;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: #666;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #f1c40f;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #d4a20f;
+    }
+    .image-box {
+      flex: 1;
+      background: #f5f9fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 95%;
+      }
+      .login-box, .image-box {
+        flex: none;
+        width: 100%;
+      }
+      .image-box {
+        order: -1; /* Moves the image above the form */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechGuardians Solution</h1>
+  </header>
+
+  <div class="container">
+    <div class="image-box">
+      <img src="{% static 'tech1.png' %}" alt="Welcome Image">
+    </div>
+    <div class="login-box">
+      <h2>{% trans "WELCOME" %}</h2>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="input-group">
+          <label>{% trans "Username" %}</label>
+          <input type="text" name="username" placeholder="Enter username" required>
+        </div>
+        <div class="input-group">
+          <label>{% trans "Password" %}</label>
+          <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+       
+        <div class="options">
+          <input type="checkbox"> {% trans "Remember" %}
+          <a href="forgot_password">{% trans "Forgot Password?" %}</a>
+        </div>
+        <button type="submit" class="submit-btn">{% trans "SUBMIT" %}</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 TechGuardians Solution</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

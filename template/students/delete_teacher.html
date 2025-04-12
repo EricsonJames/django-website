@@ -1,0 +1,11 @@
+
+
+
+  <h2>Are you sure you want to delete this teacher?</h2>
+  <p>{{ teacher.first_name }} {{ teacher.last_name }}</p>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Yes, Delete</button>
+  </form>
+  <a href="{% url 'teacher_list' %}">Cancel</a>
+

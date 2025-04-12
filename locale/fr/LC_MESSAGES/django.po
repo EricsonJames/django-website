@@ -1,0 +1,524 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-30 05:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\school\settings.py:151
+msgid "English"
+msgstr "Anglais"
+
+#: .\school\settings.py:152
+msgid "French"
+msgstr "Français"
+
+#: .\school\settings.py:153
+msgid "Spanish"
+msgstr ""
+
+#: .\template\students\add_class.html:13 .\template\students\class_list.html:9
+#: .\template\students\edit_class.html:121
+#, fuzzy
+#| msgid "Classes"
+msgid "Class"
+msgstr "Classe"
+
+#: .\template\students\add_class.html:121
+#: .\template\students\add_primary.html:123
+#: .\template\students\add_secondary.html:15
+#: .\template\students\add_secondary.html:123
+#: .\template\students\add_senior.html:15
+#: .\template\students\add_senior.html:123
+#: .\template\students\add_subject.html:123
+#: .\template\students\add_teachers.html:13
+#: .\template\students\add_teachers.html:122
+#: .\template\students\re_register_secondary_to_senior.html:25
+#: .\template\students\re_register_secondary_to_senior.html:133
+#, fuzzy
+#| msgid "Student Registration Chart "
+msgid "Student Registration"
+msgstr "Tableau d’inscription des étudiants"
+
+#: .\template\students\add_class.html:132
+msgid "Add"
+msgstr "Ajoute"
+
+#: .\template\students\add_class.html:136
+#: .\template\students\add_primary.html:176
+#: .\template\students\add_secondary.html:175
+#: .\template\students\add_senior.html:174
+#: .\template\students\add_subject.html:138
+#: .\template\students\add_teachers.html:178
+#: .\template\students\edit_class.html:129
+#: .\template\students\edit_primary.html:168
+#: .\template\students\edit_secondary.html:172
+#: .\template\students\edit_senior.html:168
+#: .\template\students\edit_subject.html:130
+#: .\template\students\edit_teacher.html:55
+#: .\template\students\re_register_primary_to_secondary.html:173
+#: .\template\students\re_register_secondary_to_senior.html:185
+msgid "Cancel"
+msgstr "Annuler"
+
+#: .\template\students\add_primary.html:113
+#: .\template\students\add_secondary.html:113
+#: .\template\students\add_senior.html:113
+#: .\template\students\add_teachers.html:111
+#: .\template\students\edit_class.html:105
+#: .\template\students\edit_primary.html:104
+#: .\template\students\edit_secondary.html:104
+#: .\template\students\edit_senior.html:104
+#: .\template\students\edit_subject.html:107
+msgid "Home"
+msgstr "Accueil"
+
+#: .\template\students\add_primary.html:148
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#: .\template\students\add_primary.html:162
+#: .\template\students\add_secondary.html:161
+#: .\template\students\add_senior.html:160
+#: .\template\students\edit_primary.html:150
+#: .\template\students\edit_secondary.html:154
+#: .\template\students\edit_senior.html:150
+#: .\template\students\re_register_primary_to_secondary.html:159
+#: .\template\students\re_register_secondary_to_senior.html:171
+msgid "Profile Image"
+msgstr "Profile"
+
+#: .\template\students\add_primary.html:167
+#: .\template\students\add_secondary.html:166
+#: .\template\students\add_senior.html:165
+#: .\template\students\edit_primary.html:158
+#: .\template\students\edit_secondary.html:162
+#: .\template\students\edit_senior.html:158
+#: .\template\students\primary_students.html:88
+#: .\template\students\re_register_primary_to_secondary.html:164
+#: .\template\students\re_register_secondary_to_senior.html:176
+#: .\template\students\secondary_students.html:88
+#: .\template\students\senior_secondary_students.html:87
+#: .\template\students\teacher_list.html:88
+msgid "Documents"
+msgstr ""
+
+#: .\template\students\add_primary.html:172
+#: .\template\students\add_secondary.html:171
+#: .\template\students\add_senior.html:170
+#: .\template\students\add_teachers.html:174
+#: .\template\students\re_register_secondary_to_senior.html:181
+#, fuzzy
+#| msgid "Newly Admitted Students"
+msgid "Add Student"
+msgstr "Étudiants nouvellement admis"
+
+#: .\template\students\add_secondary.html:139
+#: .\template\students\add_senior.html:138
+#: .\template\students\add_teachers.html:149
+#: .\template\students\edit_primary.html:130
+#: .\template\students\edit_secondary.html:130
+#: .\template\students\edit_senior.html:130 .\template\students\home.html:264
+#: .\template\students\home.html:289
+#: .\template\students\primary_students.html:83
+#: .\template\students\re_register_secondary_to_senior.html:149
+#: .\template\students\secondary_students.html:83
+#: .\template\students\senior_secondary_students.html:82
+msgid "Grade"
+msgstr "Classe"
+
+#: .\template\students\add_subject.html:15
+#: .\template\students\edit_subject.html:123
+#: .\template\students\subject_list.html:89
+#, fuzzy
+#| msgid "Subjects"
+msgid "Subject"
+msgstr "Matièrs"
+
+#: .\template\students\add_subject.html:134
+#, fuzzy
+#| msgid "Subjects"
+msgid "Add Subject"
+msgstr "Ajoute Matièrs"
+
+#: .\template\students\add_teachers.html:154 .\template\students\home.html:166
+#: .\template\students\subject_list.html:63
+#: .\template\students\teacher_list.html:84
+msgid "Subjects"
+msgstr "Matièrs"
+
+#: .\template\students\add_teachers.html:160
+msgid "Is he/she a class master?"
+msgstr "Est-ce un maître precipal de classe ?"
+
+#: .\template\students\add_teachers.html:169
+msgid "Add Document here"
+msgstr "Ajouter un document ici"
+
+#: .\template\students\class_list.html:84
+msgid "No:"
+msgstr "#"
+
+#: .\template\students\class_list.html:85 .\template\students\home.html:167
+#: .\template\students\teacher_list.html:86
+msgid "Classes"
+msgstr "Classe"
+
+#: .\template\students\class_list.html:86
+#: .\template\students\primary_students.html:89
+#: .\template\students\secondary_students.html:89
+#: .\template\students\senior_secondary_students.html:88
+#: .\template\students\subject_list.html:90
+msgid "Action"
+msgstr ""
+
+#: .\template\students\class_list.html:114
+#: .\template\students\primary_students.html:135
+#: .\template\students\secondary_students.html:135
+#: .\template\students\senior_secondary_students.html:133
+#: .\template\students\subject_list.html:113
+#: .\template\students\teacher_list.html:131
+msgid "Delete Selected"
+msgstr "Suppremer"
+
+#: .\template\students\edit_class.html:126
+msgid "Update Class"
+msgstr "Mise  à jour"
+
+#: .\template\students\edit_primary.html:113
+#, fuzzy
+#| msgid "Primary "
+msgid "Edit Primary"
+msgstr "Primaire"
+
+#: .\template\students\edit_primary.html:120
+#: .\template\students\edit_secondary.html:120
+#: .\template\students\edit_senior.html:120
+msgid "First Name"
+msgstr "Prenom"
+
+#: .\template\students\edit_primary.html:125
+#: .\template\students\edit_secondary.html:125
+#: .\template\students\edit_senior.html:125
+msgid "Last Name"
+msgstr "Nom"
+
+#: .\template\students\edit_primary.html:135
+#: .\template\students\edit_secondary.html:139
+#: .\template\students\edit_senior.html:135
+#: .\template\students\primary_students.html:84
+#: .\template\students\secondary_students.html:84
+#: .\template\students\senior_secondary_students.html:83
+msgid "Date of Birth"
+msgstr "date de naissance"
+
+#: .\template\students\edit_primary.html:140
+#: .\template\students\edit_secondary.html:144
+#: .\template\students\edit_senior.html:140
+#: .\template\students\primary_students.html:85
+#: .\template\students\secondary_students.html:85
+#: .\template\students\senior_secondary_students.html:84
+msgid "Parent Contact"
+msgstr "# de tuteur"
+
+#: .\template\students\edit_primary.html:145
+#: .\template\students\edit_secondary.html:149
+#: .\template\students\edit_senior.html:145
+#: .\template\students\primary_students.html:86
+#: .\template\students\secondary_students.html:86
+#: .\template\students\senior_secondary_students.html:85
+msgid "Address"
+msgstr "Addresse"
+
+#: .\template\students\edit_primary.html:165
+#: .\template\students\edit_secondary.html:169
+#: .\template\students\edit_senior.html:165
+#, fuzzy
+#| msgid "Secondary Students"
+msgid "Update Student"
+msgstr "College"
+
+#: .\template\students\edit_secondary.html:157
+#: .\template\students\edit_senior.html:153
+msgid "Current Image:"
+msgstr "Image actuel"
+
+#: .\template\students\edit_senior.html:113
+#, fuzzy
+#| msgid "Senior "
+msgid "Edit Senior"
+msgstr "Lycee"
+
+#: .\template\students\edit_senior.html:161
+msgid "Current Document:"
+msgstr "Documents actuel"
+
+#: .\template\students\edit_senior.html:161
+msgid "View"
+msgstr "Parcour"
+
+#: .\template\students\edit_subject.html:127
+#, fuzzy
+#| msgid "Subjects"
+msgid "Update Subjects"
+msgstr "Matièrs"
+
+#: .\template\students\edit_teacher.html:7
+#: .\template\students\edit_teacher.html:41
+#, fuzzy
+#| msgid "Teachers"
+msgid "Edit Teacher"
+msgstr "Staff"
+
+#: .\template\students\edit_teacher.html:54
+msgid "Save Changes"
+msgstr "Enregistrer"
+
+#: .\template\students\home.html:162
+msgid "Primary "
+msgstr "Primaire"
+
+#: .\template\students\home.html:163
+msgid "Secondary "
+msgstr "Collège"
+
+#: .\template\students\home.html:164
+msgid "Senior "
+msgstr "Lycee"
+
+#: .\template\students\home.html:165 .\template\students\teacher_list.html:7
+msgid "Teachers"
+msgstr "Staff"
+
+#: .\template\students\home.html:168
+msgid "Re-registration"
+msgstr "Re-inscription"
+
+#: .\template\students\home.html:169
+msgid "Primary to Secondary"
+msgstr "Primaire à collège"
+
+#: .\template\students\home.html:170
+msgid "Secondary to Senior"
+msgstr "College à Lycee"
+
+#: .\template\students\home.html:183
+#: .\template\students\primary_students.html:6
+msgid "Primary Students"
+msgstr "Primaire"
+
+#: .\template\students\home.html:191
+msgid "Secondary Students"
+msgstr "College"
+
+#: .\template\students\home.html:197
+msgid "Senior Students"
+msgstr "Lycee"
+
+#: .\template\students\home.html:204
+msgid "The sum of all Students"
+msgstr "La somme de tous les étudiants"
+
+#: .\template\students\home.html:213
+msgid "Calendar"
+msgstr "Calendrier"
+
+#: .\template\students\home.html:230
+msgid "Student Registration Chart "
+msgstr "Tableau d’inscription des étudiants"
+
+#: .\template\students\home.html:240
+msgid "Total Student by Category"
+msgstr "Nombre total d’étudiants par catégorie"
+
+#: .\template\students\home.html:254
+msgid "Student Data Overview"
+msgstr "Vue d’ensemble des données des étudiants"
+
+#: .\template\students\home.html:260 .\template\students\home.html:265
+msgid "Re-Registered Students"
+msgstr "Re-inscription"
+
+#: .\template\students\home.html:270 .\template\students\home.html:295
+#: .\template\students\secondary_students.html:6
+msgid "Secondary"
+msgstr "College"
+
+#: .\template\students\home.html:274 .\template\students\home.html:299
+msgid "Senior Secondary"
+msgstr "Lycee"
+
+#: .\template\students\home.html:285 .\template\students\home.html:290
+msgid "Newly Admitted Students"
+msgstr "Étudiants nouvellement admis"
+
+#: .\template\students\home.html:310 .\template\students\home.html:314
+msgid "Comparison"
+msgstr "Comparaison"
+
+#: .\template\students\home.html:315
+msgid "Value"
+msgstr "Valeur"
+
+#: .\template\students\home.html:320
+msgid "Difference Between Secondary and Senior Secondary Students"
+msgstr "Différence entre les élèves du College et du Lycee"
+
+#: .\template\students\home.html:331
+msgid "New Primary Students"
+msgstr "Nouvel élève du primaire"
+
+#: .\template\students\home.html:335
+msgid "New primary student"
+msgstr "Nouvel élève du primaire"
+
+#: .\template\students\login.html:8
+msgid "Login"
+msgstr "Connecter"
+
+#: .\template\students\login.html:125
+msgid "WELCOME"
+msgstr "Bienvenue"
+
+#: .\template\students\login.html:129
+msgid "Username"
+msgstr "nom d'utilisateur"
+
+#: .\template\students\login.html:133
+msgid "Password"
+msgstr "mot de passe"
+
+#: .\template\students\login.html:138
+msgid "Remember"
+msgstr "oublier"
+
+#: .\template\students\login.html:141
+msgid "SUBMIT"
+msgstr "SUMMETRE"
+
+#: .\template\students\primary_students.html:54
+#, python-format
+msgid "Primary Student"
+msgstr "Primaire"
+
+#: .\template\students\primary_students.html:61
+msgid "Search"
+msgstr "Rechercher"
+
+#: .\template\students\primary_students.html:63
+msgid "Clear"
+msgstr ""
+
+#: .\template\students\primary_students.html:80
+#: .\template\students\secondary_students.html:80
+#: .\template\students\senior_secondary_students.html:79
+msgid "Admission No"
+msgstr "code d'admission"
+
+#: .\template\students\primary_students.html:81
+#: .\template\students\secondary_students.html:81
+#: .\template\students\senior_secondary_students.html:80
+msgid "FName"
+msgstr "Prenom"
+
+#: .\template\students\primary_students.html:82
+#: .\template\students\secondary_students.html:82
+#: .\template\students\senior_secondary_students.html:81
+msgid "LName"
+msgstr "Nom"
+
+#: .\template\students\primary_students.html:87
+#: .\template\students\secondary_students.html:87
+#: .\template\students\senior_secondary_students.html:86
+#: .\template\students\teacher_list.html:87
+msgid "Photo"
+msgstr "Photos"
+
+#: .\template\students\primary_students.html:90
+#: .\template\students\secondary_students.html:90
+#: .\template\students\senior_secondary_students.html:89
+#: .\template\students\teacher_list.html:90
+msgid "ID Card"
+msgstr "Carte"
+
+#: .\template\students\primary_students.html:108
+msgid " No Photo"
+msgstr "Pas de photo"
+
+#: .\template\students\primary_students.html:115
+#: .\template\students\secondary_students.html:115
+#: .\template\students\senior_secondary_students.html:114
+msgid "No Documents"
+msgstr "Pas de documents"
+
+#: .\template\students\re_register_primary_to_secondary.html:13
+#: .\template\students\re_register_primary_to_secondary.html:121
+#, fuzzy
+#| msgid "Student Registration Chart "
+msgid "Student Re-registration"
+msgstr "Tableau d’inscription des étudiants"
+
+#: .\template\students\re_register_primary_to_secondary.html:169
+#, fuzzy
+#| msgid "Re-Registered Students"
+msgid "Re-register Student"
+msgstr "Re-inscription"
+
+#: .\template\students\secondary_students.html:54
+#, python-format
+msgid "Secondary Student"
+msgstr "Collège"
+
+#: .\template\students\secondary_students.html:108
+#: .\template\students\senior_secondary_students.html:107
+#: .\template\students\teacher_list.html:108
+msgid "No Photo"
+msgstr "Pas de photo"
+
+#: .\template\students\senior_secondary_students.html:6
+#: .\template\students\subject_list.html:15
+msgid "Senior Student"
+msgstr "Lycee"
+
+#: .\template\students\subject_list.html:62
+#, fuzzy
+#| msgid "Subjects"
+msgid "Total Subject:"
+msgstr "Matièrs"
+
+#: .\template\students\teacher_list.html:54
+#, fuzzy
+#| msgid "Teachers"
+msgid "Teachers:"
+msgstr "Staff"
+
+#: .\template\students\teacher_list.html:80
+msgid "FirstName"
+msgstr "Prenom"
+
+#: .\template\students\teacher_list.html:81
+msgid "LastNames"
+msgstr "Nom"
+
+#: .\template\students\teacher_list.html:82
+msgid "Admission No:"
+msgstr "Code d'admission"
+
+#: .\template\students\teacher_list.html:83
+msgid "Contact"
+msgstr ""
+
+#: .\template\students\teacher_list.html:85
+msgid "Salary"
+msgstr "Salaire"
+
+#: .\template\students\teacher_list.html:89
+msgid " No Document"
+msgstr "Pas de documents"

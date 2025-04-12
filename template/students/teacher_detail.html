@@ -1,0 +1,47 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Detail</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Teacher Details</h1>
+
+    <div>
+        <h2>{{ teacher.first_name }} {{ teacher.last_name }}</h2>
+        <p><strong>Contact:</strong> {{ teacher.contact }}</p>
+        <p><strong>Address:</strong> {{ teacher.address }}</p>
+        <p><strong>Subjects:</strong> 
+            {% for subject in teacher.subjects.all %}
+                {{ subject.name }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <p><strong><td>
+            {% if teacher.is_class_master %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+        </td>
+        </p>
+        <div>
+            <h3>Profile Photo:</h3>
+            {% if teacher.profile_photo %}
+                <img src="{{ teacher.profile_photo.url }}" alt="Profile Photo" style="width: 150px; height: 150px; border-radius: 50%;">
+            {% else %}
+                <p>No Profile Photo</p>
+            {% endif %}
+        </div>
+        <p>
+            <a href="{% url 'generate_teacher_card' teacher.id %}" target="_blank">Download Teacher Card</a>
+        </p>
+    </div>
+
+    <a href="{% url 'teacher_list' %}">Back to Teachers List</a>
+</body>
+</html>
