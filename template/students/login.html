@@ -134,7 +134,15 @@
           <label>{% trans "Password" %}</label>
           <input type="password" name="password" placeholder="Enter password" required>
         </div>
-       
+       {% load i18n %}
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
         <div class="options">
           <input type="checkbox"> {% trans "Remember" %}
           <a href="forgot_password">{% trans "Forgot Password?" %}</a>
