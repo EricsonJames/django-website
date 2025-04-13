@@ -138,7 +138,7 @@
 
         
         <div class="form-group">
-            <label for="grades">{% "Grade" %}</label>
+            <label for="grades">{% trans "Grade" %}</label>
             <select name="grades" class="form-control">
                 {% for classes in classes %}
                     <option value="{{ classes.id }}">{{ classes.name }}</option>
