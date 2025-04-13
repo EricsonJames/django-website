@@ -1,14 +1,5 @@
 {% load i18n %}
 
-  <h2>Re-Register Secondary Student to Senior Secondary</h2>
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Re-Register</button>
-  </form>
-
-
-
   {% if messages %}
     {% for message in messages %}
         <div class="alert alert-{{ message.tags }}">
